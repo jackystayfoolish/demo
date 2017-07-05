@@ -1,0 +1,47 @@
+div{
+	margin-top:10px;
+}
+a:link,a:visited{text-decoration:none;}
+a:hover,a:focus,a:active{text-decoration:underline;}
+a[href^="http:"]{
+	background: url(../img/externalLink.gif) no-repeat right top;
+	padding-right: 10px;
+}
+a[href^="mailto:"]{
+	background: url(../img/email.png) no-repeat right top;
+	padding-right: 15px;
+}
+
+a#btnLike{
+	display: block;
+	line-height: 3;
+	width: 11em;
+	text-align: center;
+	border:1px solid #66a300;
+	background-color: #8cca12;
+	color: #fff;
+	border-radius: 6px;
+	text-shadow:2px 2px 2px #66a300;
+	box-shadow: 2px 2px 2px #ccc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#abe142),to(#67a400));
+	}
+a#btnLike:hover{
+	background-color: #F6F40D;
+	border-color: #F63C0D;
+}
+a:link#bgImg,a:visited#bgImg{
+	display: block;
+	width: 203px;
+	height: 72px;
+	text-indent: -1000em;
+	background: url(../img/button.png) left top no-repeat;
+}
+a:hover#bgImg,a:focus#bgImg{
+	background: url(../img/button-over.png) left top no-repeat;
+}
+a:active#bgImg{
+	background: url(../img/button-active.png) left top no-repeat;
+}
+#tooltipDiv{position: relative;}
+a.tooltip:hover span{display: block;position: absolute;top: 1em; left:2em;}
+.tooltip span{display: none;}
