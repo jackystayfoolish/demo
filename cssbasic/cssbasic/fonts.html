@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonts</title>
+    <style>
+        .fallback{
+            font-family: "monaco";
+            /* font-family: "monaco", "PingFang SC"; */
+            /* font-family: "aaaaa", "monaco", "PingFang SC"; */
+        }
+        .best-practice{
+            font-family: "PingFang SC", "Microsoft Yahei", monospace;
+            /* font-family: "Microsoft Yahei", serif; */
+            /* font-family: sans-serif; */
+        }
+        .weight{
+            font-weight: bold;
+            font-weight: bolder;
+            font-weight: lighter;
+            font-weight: normal;
+            font-weight: 100;
+        }
+        @font-face {
+            font-family: "IF";
+            src: url("./IndieFlower.ttf");
+        }
+        .custom-font{
+            font-family: IF;
+        }
+    </style>
+</head>
+<body class="body" id="body">
+    <!-- <div class="fallback">font fallback 测试</div>  -->
+    <!-- <div class="best-practice">最佳实践</div> -->
+    <!-- <div class="weight">你好 Hello World</div> -->
+    <!-- <div class="custom-font">自定义字体custom font</div> -->
+</body>
+</html>

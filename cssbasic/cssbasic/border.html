@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border</title>
+    <style>
+        .c1{
+            width:400px;
+            height: 200px;
+            /* border: 1px solid red; */
+            /* border:5px solid red; */
+            /* border:5px dotted red; */
+            border:5px dashed red;
+        }
+        .c2{
+            width:400px;
+            height: 200px;
+            /* border-width: 30px; */
+            border:30px solid transparent;
+            border-image:url(./border.png) 30 round;
+        }
+        .triangle{
+            width:400px;
+            /* width:0; */
+            height: 200px;
+            border-bottom:30px solid red;
+            /* border-right:30px solid blue; */
+            border-left:30px solid transparent;
+            border-right:30px solid transparent;
+        }
+        .arrow {
+            background-color: #333;
+            height: 100px;
+            position: relative;
+            width: 100px;
+        }
+        .arrow:after {
+            content: ' ';
+            height: 0;
+            position: absolute;
+            width: 0;
+
+            border: 10px solid transparent;
+            border-left-color: #333;
+
+            top: 50%;
+            right: -20px;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+
+    </div>
+    <div class="c2">
+
+    </div>
+    <div class="triangle">
+
+    </div>
+    <div class="arrow"></div>
+</body>
+</html>
